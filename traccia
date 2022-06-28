@@ -1,0 +1,15 @@
+Bisogna gestire un servizio di abbonamento.
+Ogni abbonato può iscriversi a più contenuti che possono essere Netflix Prime Office, Spotify
+Bisogna gestire tramite servizi rest : 
+1. la creazione dell abbonato  (Dati anagrafici + cod fiscale)
+recupero dei suoi dati
+la lista di tutti gli abbonati
+  2.    La creazione di Contenuti da vendere
+    recupero di un contenuto
+    la lista di tutti i Contenuti
+3. L’acquisto di un abbonamento da parte di un abbonato  
+elenco delle sottoscrizioni di tutti gli abbonati
+elenco sottoscrizioni di un singolo abbonato
+
+
+Creare anche i test sui Controller.    
