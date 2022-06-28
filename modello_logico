@@ -1,0 +1,54 @@
+online.contenuti
+
+	Contenuto(id!,
+			  nome,
+			  prezzo,
+			  listaAbbonati)
+			  
+	ContenutoService <- Creazione delle Validazioni
+	ContenutoRepository
+	ContenutoController // 2)
+		
+
+	
+online.abbonati
+
+	Abbonato(id!,
+			 datiAnagraf,
+			 codiceFiscale
+			 listaContenuti)
+			 
+	AbbonatoService <- Creazione delle Validazioni
+	AbbonatoRepository
+	AbbonatoController // 3) + recupero dei suoi dati
+	SottoscrizioneAbbonamentoRequest
+	InserimentoAbbonamentoRequest (datiAnagraf, codiceFiscale, lista_contenuti)
+	SottoscrizioneAbbonamentoResponse
+	
+	
+online.errori
+	1 ErrorHandler //catturiamo tutti gli errori
+
+\test
+	ContenutoServiceTest -
+	ContenutoControllerTest -
+	AbbonatoServiceTest -
+	AbbonatoControllerTest -
+
+
+	- la creazione dell abbonato
+	- recupero dei suoi dati
+	- la lista di tutti gli abbonati
+	- La creazione di Contenuti da vendere
+	- recupero di un contenuto
+	- la lista di tutti i Contenuti
+	- L’acquisto di un abbonamento da parte di un abbonato
+	- elenco delle sottoscrizioni di tutti gli abbonati
+	- elenco sottoscrizioni di un singolo abbonato
+	
+	- testing delle funzionalita elencate sopra
+	
+	
+	
+	
+	
